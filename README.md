@@ -49,6 +49,5 @@ Ensuite, dans votre gulpfile.js
     .pipe(gulp.dest("dist"));
 });`
 
-C'est évidemment `.pipe(babel())` qui est important !
 
 Et voilà, vos ES6 seront transpilés en ES5 :)
