@@ -41,11 +41,11 @@ Puis ajoutez le plugin-in Babel pour Gulp
 
 Ensuite, dans votre gulpfile.js
 
-`var babel = require('gulp-babel');
+`var babel = require('gulp-babel');`
 
-gulp.task("default", function () {
+`gulp.task("default", function () {
   return gulp.src("src/app.js")
-    .pipe(babel())
+    .pipe(babel({ presets: ['es2015'] }))
     .pipe(gulp.dest("dist"));
 });`
 
