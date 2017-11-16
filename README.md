@@ -28,3 +28,27 @@ Ensuite, toujours à la racine lancez :
 `gulp`
 
 Et voilà :)
+
+## Pour ajouter l'étape de conversion de ES6 à ES5 
+
+Tout d'abord, installez Babel sur votre machine 
+
+`npm install babel-core babel-preset-es2015`
+
+Puis ajoutez le plugin-in Babel pour Gulp
+
+`npm install --save gulp-babel`
+
+Ensuite, dans votre gulpfile.js
+
+`var babel = require('gulp-babel');
+
+gulp.task("default", function () {
+  return gulp.src("src/app.js")
+    .pipe(babel())
+    .pipe(gulp.dest("dist"));
+});`
+
+C'est évidemment `.pipe(babel())` qui est important !
+
+Et voilà, vos ES6 seront transpilés en ES5 :)
