@@ -10,12 +10,15 @@ Un template Gulp avec quelques dépendances renseignées côté json :
 - Sass
 - Sourcemaps
 - Uglify
+- Plumber
+- Notify
+- Imagemin
 
 ## Comment installer Gulp ?
 
 Avant tout, installez Node.js.
 
-Ensuite, installez Gulp en global sur votre machine : 
+Ensuite, installez Gulp en global sur votre machine :
 
 `npm install gulp -g`
 
@@ -29,9 +32,9 @@ Ensuite, toujours à la racine lancez :
 
 Et voilà :)
 
-## Pour ajouter l'étape de conversion de ES6 à ES5 
+## Pour ajouter l'étape de conversion de ES6 à ES5
 
-Tout d'abord, installez Babel sur votre machine 
+Tout d'abord, installez Babel sur votre machine
 
 `npm install babel-core babel-preset-es2015`
 
